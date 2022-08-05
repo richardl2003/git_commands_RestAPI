@@ -5,6 +5,7 @@ target/
 !**/src/test/**/target/
 mvnw.cmd
 mvnw
+env.properties
 
 ### STS ###
 .apt_generated
