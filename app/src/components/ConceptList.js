@@ -49,21 +49,30 @@ const ConceptList = () => {
     return (
         <div>
             <NavBar />
-            <div className=' container mt-6 mx-auto overflow-x-auto relative'>
-                <table className='w-full text-sm text-left text-gray-500 dark:text-gray-400'>
-                    <thead className='text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
-                        <tr>
-                            <th scope='col' class='py-3 px-6'>Command</th>
-                            <th scope='col' class='py-3 px-6'>Action</th>
-                            <th scope='col' class='py-3 px-6'>About</th>
-                            <th scope='col' class='py-3 px-6'>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {conceptList}
-                    </tbody>
-                </table>
-            </div>
+            <header className="bg-white shadow mx-auto">
+                <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                    <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
+                </div>
+            </header>
+            <main>
+                <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+                    <div className=' container mt-6 mx-auto overflow-x-auto relative'>
+                        <table className='w-full text-sm text-left text-gray-500 dark:text-gray-400'>
+                            <thead className='text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
+                                <tr>
+                                    <th scope='col' class='py-3 px-6'>Command</th>
+                                    <th scope='col' class='py-3 px-6'>Action</th>
+                                    <th scope='col' class='py-3 px-6'>About</th>
+                                    <th scope='col' class='py-3 px-6'>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {conceptList}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main> 
         </div>
     )
 }
