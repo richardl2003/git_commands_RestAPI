@@ -35,7 +35,7 @@ const ConceptList = () => {
     }
 
     const conceptList = concepts.map(concept => {
-        return <tr key={concept.id}>
+        return <tr key={concept.id} className='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>
             <td class="border px-4 py-2">{concept.command}</td>
             <td class="border px-4 py-2">{concept.action}</td>
             <td class="border px-4 py-2">{concept.about}</td>
@@ -49,14 +49,14 @@ const ConceptList = () => {
     return (
         <div>
             <NavBar />
-            <div className='container mt-6'>
-                <table className='table-auto'>
-                    <thead>
+            <div className=' container mt-6 mx-auto overflow-x-auto relative'>
+                <table className='w-full text-sm text-left text-gray-500 dark:text-gray-400'>
+                    <thead className='text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
                         <tr>
-                            <th>Command</th>
-                            <th>Action</th>
-                            <th>About</th>
-                            <th>Actions</th>
+                            <th scope='col' class='py-3 px-6'>Command</th>
+                            <th scope='col' class='py-3 px-6'>Action</th>
+                            <th scope='col' class='py-3 px-6'>About</th>
+                            <th scope='col' class='py-3 px-6'>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
