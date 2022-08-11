@@ -14,7 +14,7 @@ const NavBar = () => {
                         <div className='flex items-center'>
                             <div className='flex-shrink-0'>
                                 <NavLink tag={Link} to="/">
-                                    <span class="text-white self-center text-xl font-semibold whitespace-nowrap">Home</span>
+                                    <span class="text-white self-center text-xl font-semibold whitespace-nowrap">API</span>
                                 </NavLink>
                             </div>
                         </div>
@@ -91,11 +91,11 @@ const NavBar = () => {
                             <div ref={ref} className="px-2 pt-2 space-y-1 sm:px-3">
                                 <div className="flex flex-col gap-3">
                                     <NavLink tag={Link} to="/concepts">
-                                        <span class="text-white self-center text-m whitespace-nowrap">View All Commands</span>
+                                        <button type="button" class="text-white bg-gray-800 hover:bg-gradient-to-br focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center">View all Commands</button>
                                     </NavLink>
 
                                     <NavLink tag={Link} to="/concepts/add" className="mb-3">
-                                        <span class="text-white self-center text-m whitespace-nowrap">Add New Command</span>
+                                        <button type="button" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Add New Command</button>
                                     </NavLink>
                                 </div>                               
                             </div>
