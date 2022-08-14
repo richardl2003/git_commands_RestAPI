@@ -57,17 +57,17 @@ const EditConcept = () => {
 
                     <form onSubmit={handleSubmit}>
                         <div className='mb-6'>
-                            <label for="command" className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'>Command</label>
+                            <label for="command" className='block mb-2 text-base font-medium text-gray-900 dark:text-gray-300'>Command</label>
                             <input type="text" name="command" id="command" value={concepts.command || ''} onChange={handleChange} autoComplete="command" className='block p-4 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500' />
                         </div>
 
                         <div className='mb-6'>
-                            <label for="action" className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'>Action</label>
+                            <label for="action" className='block mb-2 text-base font-medium text-gray-900 dark:text-gray-300'>Action</label>
                             <input type="text" name="action" id="Action" value={concepts.action || ''} onChange={handleChange} autoComplete="action" className='block p-4 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500' />
                         </div>
 
                         <div className='mb-6'>
-                            <label for="about" className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'>About</label>
+                            <label for="about" className='block mb-2 text-base font-medium text-gray-900 dark:text-gray-300'>About</label>
                             <textarea type="text" name='about' rows="4" id='about' value={concepts.about || ''} onChange={handleChange} autoComplete="about" className=' resize-y block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500' />                
                         </div>
 
