@@ -2,7 +2,7 @@
 
 #### With so many Git Commands available to use, having an API to help me remember the ones I used regularly during my Research Internship will help me develop my skills with navigating and operating Git. 
 
-### The goal of this project was to:
+### Skills I learned/honed while working on this project:
 - Learn Java
 - Build a REST API using the Spring Boot framework
 - Work with a cloud based Database (MySQL on Azure)
